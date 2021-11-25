@@ -40,7 +40,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-post-1182-css" href="./../wp-content/uploads/elementor/css/post-1182.css?ver=1637456148" media="all">
 <link rel="stylesheet" id="font-awesome-5-all-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.4.8" media="all">
 <link rel="stylesheet" id="font-awesome-4-shim-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.4.8" media="all">
-<link rel="stylesheet" id="elementor-post-73-css" href="./../wp-content/uploads/elementor/css/post-73.css?ver=1637622964" media="all">
+<link rel="stylesheet" id="elementor-post-73-css" href="./../wp-content/uploads/elementor/css/post-73.css?ver=1637797450" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
@@ -71,7 +71,44 @@ flexibility(document.documentElement);
 You can add your own CSS here.
 
 Click the help icon above to learn more.
-*/</style>
+*/
+
+.container-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 10px;
+}
+
+.form-group textarea{
+	margin-bottom: 20px;
+}
+
+.form-button{
+	margin:0 auto;
+	display:block;
+}
+
+textarea {
+  resize: vertical;
+}</style>
 		</head>
 
 <body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="page-template-default page page-id-73 wp-custom-logo ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header ast-desktop ast-page-builder-template ast-no-sidebar astra-3.7.5 elementor-default elementor-kit-1182 elementor-page elementor-page-73">
@@ -241,30 +278,36 @@ Click the help icon above to learn more.
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-53f9a06d elementor-widget elementor-widget-heading" data-id="53f9a06d" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">Pedido de Coco</h3>		</div>
+			<h3 class="elementor-heading-title elementor-size-default">Pedido de Contacto</h3>		</div>
 				</div>
 				<div class="elementor-element elementor-element-d187f7f elementor-widget elementor-widget-html" data-id="d187f7f" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpzyvrzo" method="post">
-    <div>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" placeholder="Introduza o seu nome" required="">
-    </div>
+			
+<div class="container-form">
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpzyvrzo" method="post">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Introduza o seu nome" required="">
+        </div>
 
-    <div>
-        <label for="email-address">Email</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="Indique-nos o seu email" required="">
-    </div>
+        <div class="form-group">
+            <label for="email-address">Email</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="Indique-nos o seu email" required="">
+        </div>
 
 
-    <div>
-        <label for="message">Descrição</label>
-        <textarea rows="5" name="message" id="message" placeholder="Descreva-nos brevemente o seu problema" required=""></textarea>
+        <div class="form-group">
+            <label for="message">Descrição</label>
+            <textarea rows="5" name="message" id="message" placeholder="Descreva-nos brevemente o seu problema" required=""></textarea>
+        </div>
+
         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-    </div>
 
-    <button type="submit">"Submeter pedido"</button>
-</form>
+        <button class="form-button" type="submit">Submeter pedido</button>
+        
+    </form>
+</div>
+
 		</div>
 				</div>
 					</div>
