@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comentários para GaALIA	</title>
-	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Gabinete de Arquitectura e Apoio à Legalização de Imóveis</description>
 	<lastBuildDate>Fri, 29 Oct 2021 15:37:09 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		Comentário em Hello world! por A WordPress Commenter		</title>
-		<link>/hello-world/#comment-1</link>
+		<link>./../../hello-world/index.html#comment-1</link>
 
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
 		<pubDate>Fri, 29 Oct 2021 15:37:09 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1#comment-1</guid>
+		<guid isPermaLink="false">./../../index.html?p=1#comment-1</guid>
 
 					<description><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
